@@ -23,5 +23,6 @@ class StockKardexReport(models.Model):
     date = fields.Datetime(readonly=True)
     origin = fields.Char(readonly=True)
     picking = fields.Char(readonly=True)
+    description = fields.Char(readonly=True)
     balance = fields.Float(readonly=True, digits=(10, 2))
     cost = fields.Float(readonly=True, digits=(10, 2))
